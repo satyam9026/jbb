@@ -1,0 +1,264 @@
+/* --- Base Styles --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #081121; /* Very dark blue background */
+    color: #e0e0e0; /* Light gray text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- The Card --- */
+.profile-card {
+    background-color: #0b162a; /* Slightly lighter dark blue for card */
+    width: 500px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* --- Header --- */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.live-indicator {
+    color: #f44336; /* Red LIVE text */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #f44336;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.market-data {
+    display: flex;
+    gap: 10px;
+    color: #b0bec5; /* Lighter gray for tickers */
+}
+
+.ticker .up {
+    color: #4caf50; /* Green UP arrow */
+}
+
+.ticker .down {
+    color: #f44336; /* Red DOWN arrow */
+}
+
+.separator {
+    color: #546e7a; /* Separator color */
+    margin: 0 5px;
+}
+
+/* --- Profile Image --- */
+.profile-image-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #2196f3; /* Blue ring */
+    object-fit: cover;
+}
+
+.verified-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #2196f3;
+    font-size: 24px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+/* --- Text Content --- */
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: #4fc3f7; /* Lighter blue name */
+    text-transform: uppercase;
+}
+
+.channel-title {
+    font-size: 12px;
+    margin: 0 0 15px 0;
+    color: #90a4ae; /* Gray subtitle */
+    letter-spacing: 0.5px;
+}
+
+.stats {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.stat-item i {
+    margin-right: 5px;
+    color: #90a4ae;
+}
+
+.description, .disclaimer-bullet, .risk-bullet, .footer-disclaimer {
+    margin: 5px 0;
+    text-align: center;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.hindi-text {
+    font-size: 15px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.blue-text {
+    color: #4fc3f7;
+}
+
+.orange-text {
+    color: #ff9800;
+}
+
+/* --- Icons in text --- */
+.chart-icon, .briefcase-icon, .alert-icon, .users-blue, .file-blue, .shield-blue {
+    margin-right: 5px;
+}
+
+.chart-icon { color: #90a4ae; }
+.briefcase-icon { color: #8d6e63; } /* Brown briefcase */
+.alert-icon { color: #ff9800; }
+.users-blue, .file-blue, .shield-blue, .chart-blue { color: #2196f3; }
+
+/* --- Chips --- */
+.chips {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.chip {
+    background-color: #1a2c4a; /* Chip background */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #37474f;
+}
+
+.chip i {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.chip i.green { color: #4caf50; }
+.chip i.crypto-gold { color: #ffc107; }
+
+/* --- Feature Boxes --- */
+.feature-boxes {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    flex: 1;
+    background-color: #0f1e38;
+    border: 2px solid #1c2f52;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.box i {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* --- CTA Button --- */
+.cta-button {
+    width: 100%;
+    background-color: #2196f3; /* Solid Blue button */
+    color: #ffffff;
+    padding: 15px 0;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4); /* Blue shadow glow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-button:hover {
+    background-color: #1e88e5;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
+}
+
+.rocket-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* --- Footer --- */
+.risk-bullet {
+    font-size: 13px;
+    color: #b0bec5;
+}
+
+.footer-disclaimer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #546e7a;
+    border-top: 1px solid #21304d;
+    padding-top: 10px;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 550px) {
+    .profile-card {
+        width: 90%;
+        padding: 15px;
+    }
+    .chips {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
